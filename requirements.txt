@@ -1,0 +1,7 @@
+tensorflow
+numpy
+Pillow
+faiss-cpu
+pandas
+tqdm
+scikit-learn
