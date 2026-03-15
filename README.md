@@ -167,7 +167,7 @@ These results suggest the system is strong at returning immediately useful near-
 
 ## Project Structure
 
-The current repository is intentionally lightweight and script-based:
+The current repository is lightweight and script-based:
 
 ```text
 .
@@ -178,7 +178,7 @@ The current repository is intentionally lightweight and script-based:
 |-- README.md
 ```
 
-For a more scalable portfolio version, the recommended structure is:
+If you want to reorganize it into a cleaner layout as the project grows, this structure works well:
 
 ```text
 .
@@ -198,7 +198,7 @@ For a more scalable portfolio version, the recommended structure is:
 |-- requirements.txt
 ```
 
-Directory purpose:
+What each directory is for:
 
 - `data/raw/`: original dataset assets.
 - `data/processed/`: cleaned or joined metadata outputs.
@@ -211,7 +211,7 @@ Directory purpose:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Visual-Search-Model.git
+git clone https://github.com/asmiverma/Visual-Search-Model.git
 cd Visual-Search-Model
 ```
 
