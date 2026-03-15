@@ -167,44 +167,27 @@ These results suggest the system is strong at returning immediately useful near-
 
 ## Project Structure
 
-The current repository is lightweight and script-based:
+The repository is organized as follows:
 
 ```text
 .
 |-- evaluate_model.py
 |-- feature_extractor.py
+|-- notebooks/
+|   |-- exploratory_data_analysis.ipynb
 |-- visual_search_example.py
 |-- requirements.txt
 |-- README.md
 ```
 
-If you want to reorganize it into a cleaner layout as the project grows, this structure works well:
-
-```text
-.
-|-- data/
-|   |-- raw/                 # downloaded dataset files
-|   |-- processed/           # cleaned metadata and derived artifacts
-|-- models/
-|   |-- image_features.pkl   # serialized embeddings + image paths
-|   |-- image_index.faiss    # FAISS index artifact
-|-- notebooks/
-|   |-- exploratory_data_analysis.ipynb
-|-- scripts/
-|   |-- feature_extractor.py
-|   |-- evaluate_model.py
-|   |-- visual_search_example.py
-|-- README.md
-|-- requirements.txt
-```
-
 What each directory is for:
 
-- `data/raw/`: original dataset assets.
-- `data/processed/`: cleaned or joined metadata outputs.
-- `models/`: reusable model artifacts and vector indices.
 - `notebooks/`: EDA, experiments, and analysis.
-- `scripts/`: operational entry points for pipeline steps.
+- `feature_extractor.py`: extracts image embeddings and builds the FAISS index.
+- `evaluate_model.py`: evaluates retrieval quality with ranking metrics.
+- `visual_search_example.py`: displays a sample query and retrieved results.
+- `requirements.txt`: lists Python dependencies.
+- `README.md`: documents the project, workflow, and usage.
 
 ## How to Run
 
